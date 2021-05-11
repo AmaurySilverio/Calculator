@@ -1,0 +1,148 @@
+:root{
+  --button-backgroundcolor: rgb(220 218 218);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-image: url(https://i.ytimg.com/vi/U-C0I-Ks14M/maxresdefault.jpg);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+button {
+  background-color: var(--button-backgroundcolor);
+}
+.container {
+  display: flex;
+  background-color: #337ab7;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  transition: all 0.3s linear;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container:hover {
+  background: purple;
+}
+.screendiv {
+  position: relative;
+  bottom: -36px;
+}
+.screen {
+  width: 170px;
+}
+.numbers {
+  /* display: flex;  */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* margin: 0px 53px; */
+  position: relative;
+  width: 63%;
+  top: 47px;
+  left: -22px;
+}
+.zero {
+  margin: 0px 2px 2px 0px;
+  width: 29%;
+}
+.one {
+  margin: 0px 2px 2px 0px;
+  width: 29%;
+}
+.two {
+  width: 29%;
+  margin-right: 2px;
+}
+.three {
+  width: 29%;
+}
+.four {
+  width: 29%;
+  margin: 0px 2px 2px 0px;
+}
+.five {
+  margin-right: 2px;
+  width: 29%;
+}
+.six {
+  width: 29%;
+}
+.seven {
+  width: 29%;
+  margin: 0px 2px 2px 0px;
+}
+.eight {
+  width: 29%;
+  margin-right: 2px;
+  width: 29%;
+}
+.nine {
+  width: 29%;
+}
+.decimal {
+  width: 29%;
+  /* margin: 0px 2px 0px 0px; */
+}
+.operators{
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  /* align-content: flex-end; */
+  /* margin-left: 143px; */
+  position: relative;
+  right: -61px;
+  justify-content: space-around;
+  width: 20%;
+  top: -44px;
+  margin-left: 10px;
+}
+.tools button:not(.equal){
+  width: 100%;
+}
+.multiplication {
+  margin-bottom: 2px;
+}
+.division {
+  margin-bottom: 2px;
+}
+.addition {
+  margin-bottom: 2px;
+}
+.subtraction {
+  margin-bottom: 2px;
+}
+
+.equal {
+  margin-bottom: 2px;
+  position: relative;
+  left: -131px;
+  top: 0px;
+  width: 122px;
+}
+.equal::before {
+  content: "";
+  height: 23px;
+  width: 33.17px;
+  background-color: var(--button-backgroundcolor);
+  position: absolute;
+  top: -25px;
+  right: -2px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: rgb(118, 118, 118);
+  border-image: initial;
+  border-bottom: none;
+}
+.clear {
+  position: relative;
+  top: -23px;
+}
