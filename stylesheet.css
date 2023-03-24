@@ -5,11 +5,18 @@
   box-sizing: border-box;
   margin: 0;
 }
-body {
-  background-image: url(https://i.ytimg.com/vi/U-C0I-Ks14M/maxresdefault.jpg);
+html {
+  background: url(images/duck.jpeg)no-repeat center center fixed; 
+  /* background-repeat: no-repeat; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body{
   display: flex;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
 }
 button {
   background-color: var(--button-backgroundcolor);
